@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="阅读罗睿娴作品的完整原稿，了解个人职责、客户价值与协作边界。">
+  <meta name="theme-color" content="#fafafc">
+  <title>作品阅读｜罗睿娴</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/catalog.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body data-page="work">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <header class="site-header"><nav class="container nav-shell" aria-label="主导航"><a class="wordmark" href="index.html">罗睿娴<span aria-hidden="true"> / Portfolio</span></a><div class="nav-links"><a href="index.html#portfolio">作品库</a><a href="index.html#about">关于</a><a href="index.html#contact">联系</a></div></nav></header>
+  <main id="main" class="container detail-main">
+    <nav class="breadcrumb" aria-label="面包屑"><a href="index.html#portfolio">← 返回完整作品库</a><span aria-hidden="true">/</span><span id="breadcrumb-current">作品阅读</span></nav>
+    <div id="work-state" class="empty-state" role="status"><h1>正在打开作品…</h1><p>加载后可阅读完整原稿与项目说明。</p></div>
+    <noscript><div class="empty-state"><h2>需要启用 JavaScript</h2><p>作品读取器需要 JavaScript 才能加载本地作品目录与原稿。请启用后刷新页面。</p><a href="index.html#portfolio">返回作品库</a></div></noscript>
+    <article id="work-detail" hidden>
+      <header class="detail-header"><p id="work-category" class="eyebrow"></p><h1 id="work-title"></h1><div id="work-meta" class="detail-meta"></div><p id="work-summary" class="detail-summary"></p><div class="detail-actions"><a id="original-open" class="button button-primary" target="_blank" rel="noopener">打开原文件 <span aria-hidden="true">↗</span><span class="sr-only">（新标签页）</span></a><a id="original-download" class="button button-secondary" download>下载原文件 <span aria-hidden="true">↓</span></a></div></header>
+      <section aria-label="项目说明"><div class="contribution-grid"><div class="contribution-card"><h2>我的职责</h2><p id="work-role"></p></div><div class="contribution-card"><h2>客户价值</h2><p id="work-value"></p></div></div><div class="boundary-card"><h2>贡献与协作边界</h2><p id="work-boundary"></p></div></section>
+      <section id="project-photos" class="detail-section" aria-labelledby="project-photos-title" hidden><h2 id="project-photos-title">对应活动实拍</h2><div id="detail-photos" class="detail-photos"></div></section>
+      <section id="original-section" class="detail-section" aria-labelledby="original-title">
+        <h2 id="original-title">完整原稿</h2>
+        <p class="reader-note">原稿保留项目资料原文；个人职责以本页项目说明为准。</p>
+        <div id="pdf-reader" hidden>
+          <div class="reader-toolbar"><div class="mode-buttons" role="group" aria-label="阅读模式"><button id="mode-original" class="mode-button" type="button" aria-pressed="true" aria-controls="pdf-pages">原稿版式</button><button id="mode-text" class="mode-button" type="button" aria-pressed="false" aria-controls="text-reader">文字全文</button></div><div id="page-nav" class="reader-page-nav"><label for="page-select">跳至页码</label><select id="page-select" aria-controls="pdf-pages"><option>正在读取页数</option></select></div></div>
+          <p id="reader-status" class="status-message" role="status" aria-live="polite">正在初始化原稿阅读器…</p>
+          <div id="reader-fallback" class="empty-state" hidden><h3>原稿预览暂时不可用</h3><p id="reader-error">请直接打开或下载原文件继续阅读。</p><a id="reader-fallback-link" target="_blank" rel="noopener">打开完整 PDF 原稿 <span aria-hidden="true">↗</span><span class="sr-only">（新标签页）</span></a></div>
+          <div id="pdf-pages" class="reader-pages" aria-label="完整 PDF 原稿，连续向下滚动阅读所有页"></div>
+          <div id="text-reader" class="text-reader" hidden><p class="reader-note">以下是逐页抽取的原文，阅读顺序或空格可能与原稿不同，版式请以「原稿版式」为准。可使用浏览器查找（⌘F / Ctrl+F），或输入关键词定位。</p><div class="text-search-controls"><label for="text-search">全文查找</label><input id="text-search" type="search" placeholder="输入原文关键词" autocomplete="off" aria-controls="text-pages"><button id="text-search-next" class="text-button" type="button" disabled>下一处 ↓</button><span id="text-search-count" class="small-text" role="status" aria-live="polite"></span></div><div id="text-pages"></div></div>
+        </div>
+        <div id="image-reader" hidden></div>
+        <div id="video-reader" hidden></div>
+      </section>
+      <nav id="work-pagination" class="work-pagination" aria-label="继续浏览作品"></nav>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-shell"><p>© 2026 罗睿娴</p><a href="index.html#portfolio">返回完整作品库</a><a href="index.html#contact">联系我</a></div></footer>
+</body>
+</html>
