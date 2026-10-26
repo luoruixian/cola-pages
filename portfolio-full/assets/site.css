@@ -62,6 +62,10 @@ img { display: block; }
 .method-number { color: var(--accent); font-size: 12px; font-variant-numeric: tabular-nums; }
 .method-list h2 { font-size: 22px; font-weight: 550; }
 .method-list p { color: var(--secondary); font-size: 13px; margin-top: 5px; }
+.method-list li.method-support { margin-top: 14px; padding: 14px; border: 0; border-radius: 12px; background: var(--tint); gap: 15px; }
+.method-list .method-support h2 { font-size: 16px; }
+.method-list .method-support p { font-size: 12px; }
+.method-support .method-number { color: var(--secondary); }
 .method-foot { color: var(--secondary); font-size: 14px; line-height: 1.8; padding-top: 22px; }
 .archive-strip { margin-top: 78px; padding-block: 28px; display: flex; align-items: center; justify-content: space-between; gap: 32px; border-top: 1px solid var(--line); }
 .archive-strip > p { color: var(--secondary); font-size: 13px; }
@@ -139,6 +143,24 @@ img { display: block; }
 .capability-grid .micro-label { color: var(--secondary); font-size: 11px; }
 .capability-grid h3 { font-size: 20px; margin-block: 18px 10px; }
 .capability-grid p { color: var(--secondary); font-size: 14px; }
+.capability-grid-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.ai-practice { margin-top: 54px; padding-top: 36px; border-top: 1px solid var(--line); scroll-margin-top: 88px; }
+.ai-practice-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 24px; }
+.ai-practice-heading .eyebrow { margin-bottom: 12px; }
+.ai-practice-heading h3 { font-size: clamp(23px, 2.5vw, 30px); font-weight: 550; }
+.ai-practice-heading > p { color: var(--secondary); font-size: 13px; line-height: 1.8; }
+.decision-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.decision-grid article { min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 18px; }
+.decision-label { display: inline-block; padding: 4px 10px; border-radius: 100px; background: var(--accent-soft); color: #365f89; font-size: 11px; font-weight: 550; }
+.decision-grid h4 { font-size: 18px; margin-block: 18px 12px; line-height: 1.5; }
+.decision-grid article > p:last-child { color: var(--secondary); font-size: 14px; line-height: 1.8; }
+.cost-principle { margin-top: 24px; padding: 22px 24px; border-radius: 14px; background: var(--tint); }
+.cost-principle h4 { font-size: 16px; line-height: 1.6; font-weight: 550; }
+.cost-principle p { margin-top: 8px; color: var(--secondary); font-size: 13px; line-height: 1.8; }
+.tool-signature { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-top: 24px; }
+.tool-logos { display: flex; align-items: center; gap: 10px; list-style: none; padding: 0; margin: 0; }
+.tool-logos li { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.tool-logos img { width: 28px; height: 28px; object-fit: contain; }
 .career-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; margin-top: 72px; }
 .column-title { font-size: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
 .timeline { list-style: none; padding: 0 0 0 20px; margin: 30px 0 0; border-left: 1px solid var(--line); }
@@ -229,6 +251,10 @@ img { display: block; }
   .featured-grid { gap: 16px; }
   .featured-grid .card-body h3 { font-size: 17px; }
   .capability-grid article { padding: 22px; }
+  .capability-grid-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ai-practice-heading { align-items: start; flex-direction: column; gap: 16px; }
+  .decision-grid { gap: 14px; }
+  .decision-grid article { padding: 20px; }
 }
 @media (max-width: 700px) {
   html { scroll-padding-top: 76px; }
@@ -269,7 +295,12 @@ img { display: block; }
   .photo-gallery { gap: 24px; }
   .about-grid { gap: 24px; }
   .about-lead { font-size: 25px; }
-  .capability-grid { gap: 14px; }
+  .capability-grid, .capability-grid-four { grid-template-columns: 1fr; gap: 14px; }
+  .ai-practice { margin-top: 40px; padding-top: 28px; }
+  .decision-grid { grid-template-columns: 1fr; }
+  .cost-principle { padding: 20px; }
+  .tool-signature { align-items: start; flex-direction: column; gap: 12px; }
+  .tool-logos { gap: 8px; }
   .career-grid { margin-top: 52px; gap: 48px; }
   .contact-links { flex-direction: column; gap: 26px; }
   .footer-shell { flex-direction: column; align-items: start; gap: 10px; }

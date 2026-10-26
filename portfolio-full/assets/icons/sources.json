@@ -1,0 +1,41 @@
+{
+  "library": "Lobe Icons",
+  "version": "1.101.0",
+  "source": "https://registry.npmjs.org/@lobehub/icons-static-svg/-/icons-static-svg-1.101.0.tgz",
+  "licenseSource": "https://api.github.com/repos/lobehub/lobe-icons/contents/LICENSE",
+  "license": "MIT; trademarks belong to their respective owners",
+  "usage": "Unmodified logos identifying a subset of tools used, not endorsement",
+  "items": [
+    {
+      "file": "claude.svg",
+      "packageMember": "package/icons/claude-color.svg",
+      "bytes": 1696,
+      "sha256": "a3101f3047a119aa11825ad9369510f0c472428c8c52d420e31bc62db44a8364"
+    },
+    {
+      "file": "chatgpt.svg",
+      "packageMember": "package/icons/openai.svg",
+      "bytes": 1687,
+      "sha256": "a595df6b423920c67a7f8f73c063e4bfb72d415948097b6cac063a2366bb5186"
+    },
+    {
+      "file": "gemini.svg",
+      "packageMember": "package/icons/gemini-color.svg",
+      "bytes": 2836,
+      "sha256": "8ab0a9bafec11f7e69bcb9fc4ffd8f1bc927d1ddcbbb6ff36dee5ae8b5a9d602"
+    },
+    {
+      "file": "kimi.svg",
+      "packageMember": "package/icons/kimi-color.svg",
+      "bytes": 781,
+      "sha256": "0bdb95375d7c6e90a1850e91cd36770da2bc98fa33ec2d783f4a8fed027da85f"
+    },
+    {
+      "file": "workbuddy.svg",
+      "packageMember": "package/icons/workbuddy-color.svg",
+      "downloadSource": "https://unpkg.com/@lobehub/icons-static-svg@1.101.0/icons/workbuddy-color.svg",
+      "bytes": 3447,
+      "sha256": "dd8aa855627024a5217836cdaebecb8adf220e84cb6b50fec2dbac115abb326c"
+    }
+  ]
+}
